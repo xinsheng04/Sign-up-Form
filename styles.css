@@ -1,0 +1,155 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+@font-face {
+    font-family: Norse-Bold;
+    src: url("./fonts/Norse-Bold.otf") format("opentype");
+}
+
+body {
+    display: flex;
+    gap: 0;
+}
+
+.image{
+    height: 100vh;
+    width: 40%;
+    position: relative;
+}
+
+.image > .background{
+    height: 100%;
+    width: 100%;
+}
+
+.image > .logo{
+    display: flex;
+    gap: 5px;
+    font-size: 8rem;
+    font-family: Norse-Bold;
+    color: white;
+    background-color: rgb(0, 0, 0, 0.3);
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 15%;
+    justify-content: center;
+    align-items: center;
+}
+.image .logo{
+    width: 100%;
+}
+
+.image .odin-logo{
+    height: 16vh;
+}
+
+.image > .credits{
+    width: 100%;
+    position: absolute;
+    bottom: 5%;
+    font-size: 1rem;
+    text-align: center;
+    color: white;
+}
+
+.credits :visited{
+    color: white;
+}
+
+.sign-up-section{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 60%;
+    background-color: rgb(242, 242, 242);
+    gap: 2rem;
+}
+
+.sign-up-section .header{
+    padding-left: 1.5rem; 
+    font-size: 1.5rem;
+    padding-right: 15%;
+    display: flex;
+    flex-direction: column;
+    gap: 1.2rem;
+}
+
+.sign-up-section > .forms{
+    padding-left: 1.5rem; 
+    font-size: 1.5rem;
+    background-color: white;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
+    padding-top: 1.4rem;
+    padding-bottom: 1.4rem;
+    position: relative;
+}
+
+.sign-up-section > .forms> form{
+    margin-top: 0.5rem;
+    font-size: 1rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.sign-up-section .input-block {
+    flex-basis: 50%;
+    margin-bottom: 0.8rem;
+}
+
+.sign-up-section .input-block > label{
+    display: block;
+}
+
+.sign-up-section .input-block > input{
+    font-size: 1.2rem;
+    border: 1px solid #E5E7EB;
+    border-radius: 0.4rem;
+}
+
+/* .sign-up-section .input-block > input:invalid{
+    border: 1.5px solid red;
+} */
+
+.sign-up-section .input-block > input:focus{
+    outline: none;
+    border: 2px solid blue;
+}
+
+.sign-up-section .input-block > input:hover{
+    cursor: pointer;
+    border: 2px solid blue;
+    background-color: rgb(0, 153, 255, 0.1);
+}
+
+.sign-up-section .create-account{
+    position: absolute;
+    bottom: -3.3rem;
+    width: 25%;
+    font-size: 1.3rem;
+    border-radius: 0.4rem;
+    border: none;
+    background-color: #596D48;
+    padding: 0.5rem;
+    color: white;
+}
+
+.sign-up-section .create-account:hover{
+    background-color: #445437;
+    cursor: pointer;
+}
+
+.sign-up-section > .login{
+    margin-top: 3rem;
+    padding-left: 1.5rem; 
+    font-size: 1.2rem;
+}
+
+.sign-up-section > .login > a{
+    text-decoration: none;
+    font-weight: 700;
+    color: #596D48;
+}

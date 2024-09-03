@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign-up Page</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="image">
+        <!-- target this with .image img{} -->
+        <img class="background" src="./images/green leaf plant.avif" alt="green leaf plant">
+        <div class="logo">
+            <img class="odin-logo" src="./images/odin-lined.png" alt="odin logo">
+            <span>ODIN</span>
+        </div>
+        <p class="credits">
+            Photo by 
+            <a href="https://unsplash.com/@haliewestphoto">Halie West</a> 
+            on  
+            <a href="https://unsplash.com/photos/green-leaf-plant-in-close-up-photography-25xggax4bSA">Unsplash</a>
+        </p>
+    </div>
+    <div class="sign-up-section">
+        <div class="header">
+            <p><b>
+                This is not a real online service! 
+                You know you need something like this in your life to help you realise your deepest dreams. 
+                Sign up <i>now</i> to get started.
+                </b></p>
+            <p><b>You <i>know</i> you want to.</b></p>
+        </div>
+        <div class="forms">
+            <b>Let's do this!</b>
+            <form method="post">
+                <div class="input-block">
+                    <label for="fname">FIRST NAME</label>
+                    <input type="text" minlength="1" required>
+                </div>
+                <div class="input-block">
+                    <label for="lname">LAST NAME</label>
+                    <input type="text" minlength="1" required>
+                </div>
+                <div class="input-block">
+                    <label for="email">EMAIL</label>
+                    <input type="email" minlength="1" required>
+                </div>
+                <div class="input-block">
+                    <label for="phone-no">PHONE NUMBER</label>
+                    <input type="number" minlength="10" required>
+                </div>
+                <div class="input-block">
+                    <label for="initial-password">PASSWORD</label>
+                    <input type="password" minlength="8" required>
+                </div>
+                <div class="input-block">
+                    <label for="confirm-password">CONFIRM PASSWORD</label>
+                    <input type="password" minlength="8" required>
+                </div>
+                <button class="create-account" type="submit">Create Account</button>
+            </form>
+        </div>
+
+        <p class="login">Already have an account? <a href="https://www.google.com/search?q=is+google+down">Log in</a></p>
+    </div>
+</body>
+</html>
